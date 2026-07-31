@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Primera Página</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f0f4f8;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .caja {
+            background: white;
+            max-width: 500px;
+            margin: auto;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(0,0,0,.15);
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            background: #0077ff;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #005fd1;
+        }
+    </style>
+</head>
+<body>
+
+<div class="caja">
+    <h1>¡Hola!</h1>
+    <p>Esta es mi primera página web.</p>
+
+    <button onclick="saludar()">Haz clic aquí</button>
+</div>
+
+<script>
+function saludar() {
+    alert("¡Bienvenido a mi página!");
+}
+</script>
+
+</body>
+</html>
