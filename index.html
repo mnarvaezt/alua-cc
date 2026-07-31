@@ -1,55 +1,91 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Primera Página</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Distancias</title>
 
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f0f4f8;
-            text-align: center;
-            padding: 50px;
-        }
+<style>
+body{
+    font-family: Consolas, "Courier New", monospace;
+    background:#272822;
+    color:#F8F8F2;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    margin:0;
+}
 
-        .caja {
-            background: white;
-            max-width: 500px;
-            margin: auto;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 0 15px rgba(0,0,0,.15);
-        }
+.contenedor{
+    background:#3E3D32;
+    padding:25px;
+    border-radius:10px;
+    border:1px solid #49483E;
+    box-shadow:0 0 20px rgba(0,0,0,.45);
+    width:430px;
+}
 
-        button {
-            padding: 10px 20px;
-            border: none;
-            background: #0077ff;
-            color: white;
-            border-radius: 8px;
-            cursor: pointer;
-        }
+h2{
+    text-align:center;
+    margin-top:0;
+    color:#A6E22E;
+}
 
-        button:hover {
-            background: #005fd1;
-        }
-    </style>
+label{
+    display:block;
+    margin-bottom:10px;
+    color:#F8F8F2;
+    font-weight:bold;
+}
+
+textarea{
+    width:100%;
+    height:150px;
+    padding:12px;
+    box-sizing:border-box;
+
+    background:#272822;
+    color:#F8F8F2;
+
+    border:1px solid #75715E;
+    border-radius:6px;
+
+    font-family:Consolas,"Courier New",monospace;
+    font-size:15px;
+    resize:none;
+}
+
+textarea::placeholder{
+    color:#A6E22E;
+    opacity:0.85;
+}
+
+textarea:focus{
+    outline:none;
+    border-color:#66D9EF;
+    box-shadow:0 0 8px rgba(102,217,239,.5);
+}
+</style>
+
 </head>
 <body>
 
-<div class="caja">
-    <h1>¡Hola!</h1>
-    <p>Esta es mi primera página web.</p>
+<div class="contenedor">
+    <h2>Distancias</h2>
 
-    <button onclick="saludar()">Haz clic aquí</button>
+    <label for="distancias">
+        Ingrese una distancia por línea (n10, n11, n15, n20, n50 y n100)
+    </label>
+
+    <textarea id="distancias"
+              placeholder="n10
+n11
+n15
+n20
+n50
+n100"></textarea>
 </div>
-
-<script>
-function saludar() {
-    alert("¡Bienvenido a mi página!");
-}
-</script>
 
 </body>
 </html>
